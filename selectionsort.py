@@ -1,9 +1,10 @@
 import random, timeit
 
 '''
-Determines the execution time of a selectionsort algorithm. I do not 
-own some of this code. All rigths and original code of the wrapper 
-and wrapped functions belong to Xiaonuo Gantan from Python Central. 
+Determines the execution time of a selectionsort algorithm, given an 
+array of random integers. I do not own some of this code. All rigths 
+and original code of the wrapper and wrapped functions belong to 
+Xiaonuo Gantan from Python Central. 
 '''
 
 def wrapper(func, *args, **kwargs):
@@ -31,7 +32,9 @@ def selectionsort(array):
         array[minPos] = temp
     return array
 
-arraySize = 50
+arraySize = 10
 array = random.sample(range(1, 100), arraySize)
 wrapped = wrapper(selectionsort, array)
+print selectionsort(array)
+print
 print timeit.timeit(wrapped, number = 1000)
