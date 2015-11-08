@@ -33,7 +33,7 @@ def selectionsort(array):
     return array
 
 arraySize = 10
-array = random.sample(range(1, 100), arraySize)
+array = random.sample(range(1, 1000), arraySize)
 wrapped = wrapper(selectionsort, array)
 print selectionsort(array)
 print
