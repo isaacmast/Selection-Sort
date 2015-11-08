@@ -2,8 +2,9 @@ import random, string, timeit
 
 '''
 Determines the execution time of a selectionsort algorithm, given an 
-array of random strings. All rigths and original code of the wrapper 
-and wrapped functions belong to Xiaonuo Gantan from Python Central at 
+array, length ARRAYLENGTH, of random strings, length STRINGLENGTH. 
+All rigths and original code of the wrapper and wrapped functions 
+belong to Xiaonuo Gantan from Python Central at 
 "pythoncentral.io/time-a-python-function/". 
 '''
 
